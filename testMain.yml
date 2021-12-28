@@ -1,0 +1,28 @@
+---
+
+- hosts: netPi
+  become: true
+  pre_tasks:
+
+  - name: update (Debian based systems)
+    tags: always
+    apt:
+      upgrade: dist
+      update_cache: yes
+      changed_when: False
+    when: ansible_distribution in["Ubuntu", "Debian", "Pop!_OS"]
+
+- hosts: netPi
+  become: true
+  tasks:
+
+  - name: install linux packages
+    tags: linux,packages
+    package:
+      name: 
+        - ansible
+        - git
+        - docker.io
+        - htop
+      state: latest
+      changed_when: False
