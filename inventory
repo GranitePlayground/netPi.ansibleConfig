@@ -3,34 +3,34 @@
 [Workstations]
 #Bernard_oldAir
 #Laverne
-rPiDesktop # vertual machine
+#rPiDesktop # vertual machine
 #myPi    # Does not exist yet for pi48
 
 [Servers]
 netPi
 
 [Testing]
-ansibleTesting1
-ansibleTesting2
-rPiDesktop
+#ansibleTesting1
+#ansibleTesting2
+#rPiDesktop
 
 #  --------- Operating Systems -----------
 
 [MacOSX]
-Bernard_oldAir
+#Bernard_oldAir
 #Laverne
 
 [Linux]
-ansibleTesting1
-ansibleTesting2
-rPiDesktop
+#ansibleTesting1
+#ansibleTesting2
+#rPiDesktop
 #myPi    # Does not exist yet for pi48
 
 [Ubuntu_Desktop]
-ansibleTesting1
+#ansibleTesting1
 
 [web_Servers]
-ansibleTesting2
+#ansibleTesting2
 
 [rPi]
-rPiDesktop
+#rPiDesktop
